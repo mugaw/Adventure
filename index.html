@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lugrasimo&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    <title>Adventure!</title>
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Adventure!</h1>
+    <ul class="nav-links">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Projects</a></li>
+      <li class="btn"><a href="#">Contacts</a></li>
+    </ul>
+    <img src="img/menu-btn.png" alt="menu-btn" class="menu-btn">
+  </nav>
+  <header>
+    <div class="header-home">
+      <h2>Explore The Wonderful World!</h2>
+      <div class="line"></div>
+      <h1>A Wonderful Gift</h1>
+      <a href="#" class="btn">Learn More!</a>
+    </div>
+  </header>
+
+  <section class="events">
+    <div class="title">
+      <h1>Upcoming Events</h1>
+      <div class="line"></div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img src="img/img1.png" alt="Everest">
+        <h4>Everest Camp Trek!</h4>
+        <p>Scaling Everest is a two-month odyssey. Trekkers conquer Khumbu Icefall's ladders and endure thin air before summiting the world's peak, all for a breathtaking view from the top of the world.</p>
+        <a href="#" class="btn">Learn More!</a>
+      </div>
+      <div class="col">
+        <img src="img/img2.png" alt="Walking">
+        <h4>Walking Holidays!</h4>
+        <p>Walking holidays let you explore stunning scenery at your own pace. Hike dramatic coastlines, meander through quaint villages, or traverse lush forests - all with fresh air and beautiful landscapes as your companions.</p>
+        <a href="#" class="btn">Learn More!</a>
+      </div>
+  </div>
+  </section>
+
+  <section class="explore">
+    <div class="explore-content">
+      <h1>Explore The World!</h1>
+    <div class="line"></div>
+    <p>Curiosity beckons from bustling markets to silent glaciers. The world awaits, a tapestry of cultures, landscapes, and stories waiting to be unfurled with every adventure.</p>
+    <a href="#" class="btn">Learn More!</a>
+    </div>
+  </section>
+  
+  <section class="tours">
+    <div class="row">
+      <div class="col content-col">
+        <h1>Upcoming Tours & Destination</h1>
+        <div class="line"></div>
+        <p>Adventurers assemble! With travel restrictions loosening up, exciting destinations beckon.  Intrepid Travel suggests Vietnam, a land of vibrant cities, emerald rice terraces, and dramatic coastlines . Trek through verdant jungles, explore ancient temples, and cruise along mystical Ha Long Bay.</p>
+        <a href="#" class="btn">Learn More!</a>
+      </div>
+      <div class="col image-col">
+        <div class="image-gallery">
+          <img src="img/img3.png" alt="Sea-Trip">
+          <img src="img/img4.png" alt="Green-Trip">
+          <img src="img/img5.png" alt="Desert-Trip">
+          <img src="img/img6.png" alt="Climping-Trip">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="footer">
+    <p>Copyright © Outdoor Adventures! 2024</p>
+    <p>Work done by @Muhammad Gawad</p>
+  </section>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn')
+    const navLinks = document.querySelector('.nav-links')
+
+    menuBtn.addEventListener('click' ,()=>{
+      navLinks.classList.toggle('mobile-menu')
+    })
+  </script>
+</body>
+</html>
